@@ -16,11 +16,9 @@ export function MainBanner() {
               <h4>{val.provinceState}</h4>
             </div>
             <div className="column-2">
-              <h6><span>Confirmed</span>{val.confirmed}</h6>
+              <h6 className="long"><span>Confirmed</span>{val.confirmed}</h6>
             </div>
             <div className="column-2 change">
-              <h5>
-              </h5>
               <h6><span>Active</span>{val.active}</h6>
             </div>
             <div className="column-2 change2">
