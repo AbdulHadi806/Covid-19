@@ -8,6 +8,7 @@ export function MainBanner() {
 
   return (
     <div className="MainBanner container">
+      
       {Cases.map((val) => {
         return (
           <div className="mainbanner-inner" key={val.uid}>
@@ -15,20 +16,15 @@ export function MainBanner() {
               <h4>{val.provinceState}</h4>
             </div>
             <div className="column-2">
-              <h5>Confirmed Cases</h5>
-              <h6>{val.confirmed}</h6>
+              <h6><span>Confirmed</span>{val.confirmed}</h6>
             </div>
             <div className="column-2 change">
               <h5>
-                Active Cases <span></span>
               </h5>
-              <h6 key={val.uid}>{val.active}</h6>;
+              <h6><span>Active</span>{val.active}</h6>
             </div>
             <div className="column-2 change2">
-              <h5>
-                Deaths<span></span>
-              </h5>
-              <h6 key={val.uid}>{val.deaths}</h6>;
+              <h6><span>Deaths</span>{val.deaths}</h6>
             </div>
           </div>
         );
