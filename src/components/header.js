@@ -28,7 +28,7 @@ export function Header() {
         </div>
         <div className='box three'>
             <div className='box-left'>
-            <h2>Active Cases</h2>
+            <h2>Deaths</h2>
             <span>{Cases.reduce((acc, curr)=>   acc + curr.active,0)}</span>
             </div>
             <div className='box-right'>

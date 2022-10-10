@@ -9,7 +9,7 @@
   height: 100vh;
 }
 .container {
-  max-width: 569px;
+  max-width: 615px;
   padding-top: 40px;
   margin: 0 auto;
   justify-content: center;
@@ -22,6 +22,7 @@ h4 {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 13px;
+  color: #464646;
 }
 
 /*---------------header starts here----------------*/
@@ -62,6 +63,7 @@ h3 {
   border-radius: 9px;
   display: flex;
   flex-wrap: wrap;
+  width: 206;
   gap: 23px;
 }
 .header .box.one {
