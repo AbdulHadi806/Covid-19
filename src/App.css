@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+/*global setting*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1043px;
+  padding-top: 40px;
+  margin: 0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  position: relative;
+  z-index: 99;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h5 {
+  margin-bottom: 20px;
+  position: relative;
+  top: -38px;
+  padding-bottom: 10px;
+  border-radius: 0;
+}
+/*---------------header starts here----------------*/
+.header .box.one h2,
+h3 {
+  color: #548ab0;
+  font-size: 20px;
+}
+.header span {
+  color: #548ab0;
+  font-size: 20px;
+}
+.header .boxes {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.header .box {
+  padding: 22px 13px;
+  border-radius: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .box.one {
+  background-color: #faf1e8;
+}
+.header .box.two {
+  background-color: #feebb1;
+}
+.header .box.three {
+  background-color: #f3c6c1;
+}
+.header .box.two h2,
+h3 {
+  color: #c46934;
+  font-size: 20px;
+}
+.header .box.two span {
+  color: #c46934;
+  font-size: 20px;
+}
+.header .box.three h2,
+h3 {
+  color: #b01817;
+  font-size: 20px;
+}
+.header .box.three span {
+  color: #b01817;
+  font-size: 20px;
+}
+/*--------------mainBanner starts here----------------*/
+.MainBanner {
+  display: flex;
+  gap: 20px;
+  padding: 61px 0 0 0;
+  flex-wrap: wrap;
+}
+.column-2 {
+  background-color: #b1eaf3;
+  width: 101px;
+  border-radius: 10px;
+}
+.column-2 h5 {
+  color: #5591c5;
+  text-align: center;
+  background-color: #b1eaf3;
+}
+h4::after {
+  content: "";
+  position: absolute;
+  width: 567px;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  background-color: #e6c79b;
+}
+.column-2 h6 {
+  position: relative;
+    top: -68px;
+  font-size: 17px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+h6:last-child {
+  padding-bottom: initial;
+}
+.column-2.change {
+  background-color: #feebb1;
+}
+.column-2.change h5{
+  color: #ac5426;
+  background-color: #feebb1;
+}
+.column-2 span {
+  display: block;
+    height: 17px;
+}
+.column-2.change2 {
+  background-color: #f3c6c1;
+}
+.column-2.change2 h5 {
+  color: #9c5551;
+  background-color: #f3c6c1;
+}
+.column-2.change3 {
+  background-color: #c8e5c9;
+}
+.column-2.change3 h5 {
+  color: #4c8854;
+  background-color: #c8e5c9;
 }
