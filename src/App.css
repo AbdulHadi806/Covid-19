@@ -5,7 +5,7 @@
   margin: 0;
 }
 .container {
-  max-width: 1043px;
+  max-width: 569px;
   padding-top: 40px;
   margin: 0 auto;
 }
@@ -72,16 +72,21 @@ h3 {
   font-size: 20px;
 }
 /*--------------mainBanner starts here----------------*/
-.MainBanner {
+.mainbanner-inner {
   display: flex;
   gap: 20px;
   padding: 61px 0 0 0;
   flex-wrap: wrap;
 }
+.column-1 {
+  display: flex;
+  
+}
 .column-2 {
   background-color: #b1eaf3;
   width: 101px;
   border-radius: 10px;
+  display: flex;
 }
 .column-2 h5 {
   color: #5591c5;

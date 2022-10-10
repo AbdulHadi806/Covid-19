@@ -16,7 +16,6 @@ export function Header() {
             <span>{Cases.reduce((acc, curr)=>   acc + curr.confirmed,0)}</span>
             </div>
             <div className='box-right'>
-                <h3>Dummy image</h3>
             </div>
         </div>
         <div className='box two'>
@@ -25,7 +24,6 @@ export function Header() {
             <span>{Cases.reduce((acc, curr)=>   acc + curr.deaths,0)}</span>
             </div>
             <div className='box-right'>
-                <h3>Dummy image</h3>
             </div>
         </div>
         <div className='box three'>
@@ -34,7 +32,6 @@ export function Header() {
             <span>{Cases.reduce((acc, curr)=>   acc + curr.active,0)}</span>
             </div>
             <div className='box-right'>
-                <h3>Dummy image</h3>
             </div>
         </div>
       </div>
