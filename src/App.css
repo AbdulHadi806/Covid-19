@@ -11,15 +11,17 @@
 .container {
   max-width: 615px;
   padding-top: 40px;
+  margin-bottom: 33px !important;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  position: relative;
   display: flex;
-  gap: 34px;
   align-items: flex-end;
 }
+
 h4 {
   z-index: 99;
-  margin-bottom: 20px;
   font-weight: 500;
   font-size: 13px;
   color: #464646;
@@ -45,15 +47,7 @@ h3 {
   border: 1px solid transparent;
   transition: .2s all ease-in-out;
 }
-.mainbanner-inner::after {
-  position: absolute;
-  content: '';
-  background-color: #d8c18f;
-  width: 1px;
-  height: 263px;
-  bottom: 0;
-  right: -17px;
-}
+
 .box:hover {
   background-color: transparent !important;
   border: 1px solid #d8c18f;
@@ -97,23 +91,52 @@ h3 {
 .mainbanner-inner {
   display: flex;
   gap: 20px;
-  padding: 61px 0 0 0;
   flex-wrap: wrap;
   position: relative;
-}
-.mainbanner-inner::before {
-  position: absolute;
-  content: '';
-  background-color: #d8c18f;
-  width: 1px;
-  height: 263px;
-  bottom: 0;
-  left: -18px;
 }
 .header-intro {
   display: flex;
   justify-content: center;
   gap: 25px;
+}
+.column-1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 76px;
+}
+.column-1::after {
+  content: '';
+  position: absolute;
+  width: 439px;
+  height: 1px;
+  background-color: #feebb1;
+  bottom: 0px;
+}
+.column-1:last-child {
+  position: initial;
+}
+.mainbanner-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainbanner-info h5 {
+  position: absolute;
+  top: 12px;
+  width: 101px;
+  text-align: center;
+  height: 28px;
+  margin: 0 auto;
+  background-color: #b1eaf3;
+  left: 272px;
+}
+.value-2 {
+  left: 393px !important;
+  background-color: #feebb1 !important;
+}
+.value-3 {    
+  left: 514px !important;
+  background-color: #f3c6c1 !important;
 }
 .column-2 {
   background-color: #b1eaf3;
@@ -123,7 +146,6 @@ h3 {
   justify-content: center;
   border: 1px solid transparent;
   transition: .2s all ease-in-out;
-  border-radius: 10px;
 }
 .column-2:hover {
   background-color: transparent;
