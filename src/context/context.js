@@ -20,7 +20,6 @@ export function ContextProvider({ children }) {
     try {
       const response = await fetch(api);
       const data = await response.json();
-      console.log(data)
       dispatch({
         type: "Get Data",
         payload: data

@@ -152,10 +152,6 @@ h3 {
   border: 1px solid transparent;
   transition: .2s all ease-in-out;
 }
-.column-2:hover {
-  background-color: transparent;
-  border: 1px solid gray;
-}
 .column-2 h6 {
   font-size: 17px;
   text-align: center;
