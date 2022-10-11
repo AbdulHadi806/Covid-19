@@ -7,6 +7,7 @@ export const appReducer = (state,  action ) => {
         ...state,
          Cases: action.payload
       }
+      
   }
   return state
 

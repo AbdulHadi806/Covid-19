@@ -9,10 +9,11 @@ export function MainBanner() {
   return (
     <div className="MainBanner container">
       <div className="mainbanner-info">
-        <h5>Confirmed</h5>
-        <h5 className="value-2">Active</h5>
+        <h5>Confirmed Cases</h5>
+        <h5 className="value-2">Active <span>Cases</span></h5>
         <h5 className="value-3">Deaths</h5>
       </div>
+      {/*-----------mapped here to get the value dynamically------------ */}
       {Cases.map((val) => {
         return (
           <div className="mainbanner-inner" key={val.uid}>

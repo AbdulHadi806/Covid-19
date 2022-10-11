@@ -4,16 +4,11 @@
   padding: 0;
   margin: 0;
 }
-.App {
-  background-color: whitesmoke;
-  height: 100vh;
-}
 .container {
   max-width: 615px;
   padding-top: 40px;
   margin-bottom: 33px !important;
   margin: 0 auto;
-  justify-content: flex-end;
   flex-wrap: wrap;
   position: relative;
   display: flex;
@@ -35,7 +30,7 @@ h3 {
 }
 .header span {
   color: #548ab0;
-  font-size: 20px;
+  font-size: 27px;
 }
 .header .boxes {
   display: flex;
@@ -76,7 +71,7 @@ h3 {
 }
 .header .box.two span {
   color: #c46934;
-  font-size: 20px;
+  font-size: 27px;
 }
 .header .box.three h2,
 h3 {
@@ -85,7 +80,7 @@ h3 {
 }
 .header .box.three span {
   color: #b01817;
-  font-size: 20px;
+  font-size: 27px;
 }
 /*--------------mainBanner starts here----------------*/
 .mainbanner-inner {
@@ -105,12 +100,16 @@ h3 {
   position: relative;
   width: 76px;
 }
+.column-1 h4 {
+  color: #48484a;
+  font-size: 14px;
+}
 .column-1::after {
   content: '';
   position: absolute;
   width: 439px;
   height: 1px;
-  background-color: #feebb1;
+  background-color: #d9c3c6;
   bottom: 0px;
 }
 .column-1:last-child {
@@ -122,26 +121,29 @@ h3 {
 }
 .mainbanner-info h5 {
   position: absolute;
-  top: 12px;
-  color: #4786a9;
-  width: 101px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  text-align: center;
-  height: 28px;
-  margin: 0 auto;
-  background-color: #b1eaf3;
-  left: 272px;
+    top: 4px;
+    color: #4786a9;
+    width: 101px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    height: 36px;
+    margin: 0 auto;
+    background-color: #b1eaf3;
+    left: 96px;
 }
 .value-2 {
-  left: 393px !important;
+  left: 217px !important;
   background-color: #feebb1 !important;
   color: #c08953 !important;
 }
 .value-3 {    
-  left: 514px !important;
+  left: 338px !important;
   color: #b5625e !important;
   background-color: #f3c6c1 !important;
+}
+.mainbanner-info span {
+  display: block;
 }
 .column-2 {
   background-color: #b1eaf3;
@@ -153,10 +155,12 @@ h3 {
   transition: .2s all ease-in-out;
 }
 .column-2 h6 {
-  font-size: 17px;
+  font-size: 19px;
   text-align: center;
   padding-bottom: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  position: relative;
+    top: 15px;
 }
 h6:last-child {
   padding-bottom: initial;
